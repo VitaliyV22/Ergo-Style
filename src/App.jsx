@@ -19,7 +19,7 @@ function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/cart" element={<Cart />}/>
           </Routes>
-          <Footer />
+        
         </Router>
       </ShopContextProvider>
     </>

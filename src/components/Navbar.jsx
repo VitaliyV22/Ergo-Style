@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { useContext, useEffect, useState } from "react";
 
@@ -16,6 +17,7 @@ export const Navbar = () => {
             >
               ErgoStyle
             </a>
+            
             <div className="hidden items-center  md:flex  ml-6 space-x-4">
               <a
                 href="./desks"
@@ -51,13 +53,10 @@ export const Navbar = () => {
             >
               Login
             </a>
-            <a
-              href="./cart"
-              className="text-black font-bold hover:text-indigo-700"
-            >
-              Cart
-            </a>
-        
+           
+            <Link  className="text-black font-bold hover:text-indigo-700" to={"/cart"}>
+            Cart
+            </Link>
           </div>
           <div className="-mr-2 flex md:hidden">
             <button onClick={handleClick} className="inline-flex items-center justify-center p-2 rounded-md text-black font-bold hover:text-indigo-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
