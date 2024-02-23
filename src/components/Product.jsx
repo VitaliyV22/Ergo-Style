@@ -12,7 +12,7 @@ export const Product = (props) => {
               <img
                 src={image}
                 alt={name}
-                className="aspect-square w-full rounded object-cover"
+                className=" mx-auto "
               />
               <div className="mt-3 text-center">
                 <a

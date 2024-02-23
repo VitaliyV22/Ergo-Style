@@ -6,12 +6,10 @@ export const Banner = () => {
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 ">
         <header className="text-center">
         <h2 className="text-center text-4xl font-bold tracking-tight text-indigo-700 sm:text-5xl">
-          Spring Sale !
+          Shop our new collection!
         </h2>
 
-          <p className="mx-auto mt-4 max-w-md text-gray-500">
-            Get 20 % off on any order plus free shipping.
-          </p>
+        
         </header>
 
         <ul className="mt-8 grid grid-cols-2 content-between gap-8 lg:grid-cols-2">

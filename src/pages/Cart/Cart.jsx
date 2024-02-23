@@ -4,17 +4,14 @@ import { ShopContext } from "../../context/store-context";
 import { CartItem } from "../../components/CartItem";
 
 export const Cart = () => {
-  const { cartItems } = useContext(ShopContext);
+  const { cartItems, getTotalCartAmount } = useContext(ShopContext);
+  const totalAmount = getTotalCartAmount()
 
   return (
     <section>
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-3xl">
-          <header className="text-center">
-            <h1 className="text-xl font-bold text-gray-900 sm:text-3xl">
-              Your Cart
-            </h1>
-          </header>
+  
 
           <div className="mt-8">
             {PRODUCTS.map((product) => {
@@ -25,6 +22,30 @@ export const Cart = () => {
           </div>
         </div>
       </div>
+     {totalAmount > 0 ? (<div className="mt-8 flex justify-end border-t border-gray-100 pr-5">
+        <div className="w-screen max-w-lg space-y-4">
+          <dl className="space-y-0.5 text-sm text-gray-700">
+            
+        
+            <div className="flex justify-end gap-8  font-medium">
+            
+              <dt>Total</dt>
+              <dd>${totalAmount} </dd>
+            </div>
+          
+          </dl>
+          <div className="flex justify-end">
+            <a
+              href="#"
+              className="block rounded bg-indigo-700 px-5 py-3 text-sm text-gray-100 transition hover:bg-indigo-600"
+            >
+              Checkout
+            </a>
+          </div>
+        </div>
+        
+      </div>) : (<h1 className="text-xl font-bold text-indigo-800 sm:text-3xl text-center">Your Cart is Empty</h1>)}
+      
     </section>
   );
 };
