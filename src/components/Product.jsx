@@ -24,7 +24,7 @@ export const Product = (props) => {
               </div>
               <div className="flex items-center justify-center mt-5 gap-2">
                 <p className="mt-1 text-m text-gray-700 font-bold">
-                  {price}
+                   ${price}.00
                 </p>
                 <button onClick={() => addToCart(id) }
                   

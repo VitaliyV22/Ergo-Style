@@ -22,7 +22,7 @@ export const Cart = () => {
           </div>
         </div>
       </div>
-     {totalAmount > 0 ? (<div className="mt-8 flex justify-end border-t border-gray-100 pr-5">
+      <div className="mt-8 flex justify-end border-t border-gray-100 pr-5">
         <div className="w-screen max-w-lg space-y-4">
           <dl className="space-y-0.5 text-sm text-gray-700">
             
@@ -44,7 +44,7 @@ export const Cart = () => {
           </div>
         </div>
         
-      </div>) : (<h1 className="text-xl font-bold text-indigo-800 sm:text-3xl text-center">Your Cart is Empty</h1>)}
+      </div>
       
     </section>
   );

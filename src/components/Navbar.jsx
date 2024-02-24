@@ -11,35 +11,34 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 ">
           <div className="flex ">
-            <a href="./" className="text-indigo-700 text-4xl font-extrabold">
+            <Link to="./" className="text-indigo-700 text-4xl font-extrabold">
               ErgoStyle
-            </a>
+            </Link>
 
             <div className="hidden items-center  md:flex  ml-6 space-x-4">
-              <a
-                href="./desks"
+              <Link
+                to="/desks"
                 className="text-gray-900 hover:text-indigo-700 font-bold"
               >
                 Desks
-              </a>
-              <a
-                href="./chairs"
+              </Link>
+              <Link
+                href="./desks"
                 className="text-gray-900 hover:text-indigo-700 font-bold"
               >
                 Chairs
-              </a>
-              <a
-                href="./contact"
+              </Link><Link
+                href="./desks"
                 className="text-gray-900 hover:text-indigo-700 font-bold"
               >
-                Contact Us
-              </a>
-              <a
-                href="./fq"
+                Contact US
+              </Link><Link
+                href="./desks"
                 className="text-gray-900 hover:text-indigo-700 font-bold"
               >
-                F&Q
-              </a>
+                FAQ
+              </Link>
+              
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-4">

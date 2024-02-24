@@ -17,13 +17,10 @@ export const CartItem = (props) => {
             <h3 className="text-sm text-gray-900">{name}</h3>
 
             <dl className="mt-0.5 space-y-px text-[10px] text-gray-600">
-              <div>
-                <dt className="inline">Size:</dt>
-                <dd className="inline">XXS</dd>
-              </div>
+             
 
               <div>
-                <dt className="inline"> ${price}.00 </dt>
+                <dt className="inline text-center"> ${price}.00 </dt>
               </div>
             </dl>
           </div>
