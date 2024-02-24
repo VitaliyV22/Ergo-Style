@@ -7,6 +7,8 @@ import { ShopContextProvider } from "./context/store-context";
 import { Cart } from "./pages/Cart/Cart";
 import { Desks } from "./pages/Desks/Desks";
 import { Chairs } from "./pages/Chairs/Chairs";
+import { Contact } from "./pages/Contact/Contact";
+import { Faq } from "./pages/Faq/Faq";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Route path="/cart" element={<Cart />}/>
             <Route path="/desks" element={<Desks />}/>
             <Route path="/chairs" element={<Chairs /> }/>
+            <Route path="/contact" element={<Contact /> }/>
+            <Route path="/faq" element={<Faq /> }/>
           </Routes>
         <Footer />
         </Router>

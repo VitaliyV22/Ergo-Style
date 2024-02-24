@@ -1,17 +1,16 @@
 import React from 'react'
 
+import { ChairsCollection } from '../../components/ChairsCollection'
+
+import { Testimonials } from '../../components/Testimonials'
+import { Email } from '../../components/Email'
 export const Chairs = () => {
   return (
-    <div className='pt-12'>
+    <div>
     
-    <h1 className='text-center text-indigo-800 font-bold text-4xl pt-2'>Shop our ergonomic desks collection</h1>
-    <div className=" products lg:flex justify-between mr-10 ml-10 overflow-x-auto">
-        {""}
-        {PRODUCTS.slice(4).map((product) => (
-          <Product data={product} />
-        ))}
-
-      </div>
+      <ChairsCollection />
+      <Testimonials />
+      <Email />
     
     </div>
   )

@@ -21,7 +21,7 @@ export const PRODUCTS = [
       id: 4,
       name: "Ergo-Curve",
       price: 499.00,
-      image: "https://www.housedigest.com/img/gallery/drafting-chairs-vs-ergonomic-chairs-whats-the-difference/intro-1651679183.jpg"
+      image: "https://cdn.autonomous.ai/upload/office-chairs/navigatorData/ErgoPro.png"
     },
     {
       id: 5,

@@ -23,17 +23,17 @@ export const Navbar = () => {
                 Desks
               </Link>
               <Link
-                href="./desks"
+                to="/chairs"
                 className="text-gray-900 hover:text-indigo-700 font-bold"
               >
                 Chairs
               </Link><Link
-                href="./desks"
+                to="/contact"
                 className="text-gray-900 hover:text-indigo-700 font-bold"
               >
                 Contact US
               </Link><Link
-                href="./desks"
+                to="/faq"
                 className="text-gray-900 hover:text-indigo-700 font-bold"
               >
                 FAQ
