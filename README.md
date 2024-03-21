@@ -9,7 +9,7 @@ Ergo Style is an ecommerce website that showcases modern design and functionalit
 ## Demo
 The project is hosted on AMS Amplify
 
-DEMO: https://main.dw23q6nv8tu6w.amplifyapp.com/
+DEMO: https://main.d1hf54cpjkdfms.amplifyapp.com/
 
 ## Lessons Learned
 
